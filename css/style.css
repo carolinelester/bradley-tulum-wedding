@@ -38,12 +38,13 @@ h3 {
 
 h3 span,
 h1 span {
-    transition: color .2s;
+    transition: color .5s transform 2s;
 }
 
 h3 span:hover, 
 h1 span:hover {
     color: rgba(199, 171, 255, 1);
+    transform: 0 2px 0 2px;
 }
 
 #demo {
@@ -158,6 +159,29 @@ section.contact div.form {
 
 section.contact h1 {
     text-align: left;
+}
+
+section.grid-layout div {
+    grid-column: span 6;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+section.grid-layout img {
+    border-radius: 15px;
+    border: 3px solid rgba(199, 171, 255, 1);
+}
+
+section.grid-layout h2 {
+    margin: 0px 0 8px 16px;
+}
+
+section.grid-layout p {
+    margin: 8px 0 0 0;
+    text-align: center;
+    font-size: 16px;
+    padding: 0;
 }
 
 footer {
